@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ERSTE SCHRITTE MIT BRACKETS</title>
+        <meta name="description" content="Ein interaktiver Wegweiser für die ersten Schritte mit Brackets.">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body style="background-color:paleturquoise">
+  <div id="aufgabe1" >       
+ <h1 >Miki´s spannende Rallye</h1>
+<h3>in dieser Rallye müsst ihr das Lösungswort finden und es mir am Ende sagen. Das Lösungswort hat 4 Buchstaben, viel spaß. </h3>
+<h3 >Aufgabe1: finde den ersten Buchstabe am ort des bildes  </h3> <img src="medien/Bild-20240925-111729-72fa912c.jpeg" width=100px>                
+<h3 >habe ich geschafft </h3>
+     
+ <button onclick="aufgabe1()" style=color:green  >ja</button> <button style="color:red" onclick="hinweis1()">Tipp</button> 
+      <p id="hinweis1" style="display:none">schau doch mal unter den Tischen .</p>
+ </div>
+        
+        <div id="aufgabe2"  style="display:none">
+        <p > folge den Tips und suche am ort den zweiten Buchstaben. </p> 
+        <img src="medien/Bild-20240924-081141-3e607dc0%20(2).jpeg" width=100px>
+   
+      
+        </div >
+         <a href="medien/pou.mp3">angenehme musik</a>
+      <script>
+        function aufgabe1() {
+       document.getElementById("aufgabe2").style.display="block";    
+        }
+        
+        function hinweis1(){
+            document.getElementById("hinweis1").style.display="block"
+        }
+        
+      
+          
+          
+        </script> 
+        
+        
+        
+        
+    </body>
+</html>
+
+
+   
